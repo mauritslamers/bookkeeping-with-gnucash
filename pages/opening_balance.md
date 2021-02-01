@@ -1,20 +1,19 @@
 ---
 layout: page
-title: Openingsbalans
+title: Opening balance
 permalink: /opening_balance/
 nav_order: 4
 has_children: true
 ---
 
-## De openingsbalans (of beginbalans) invoeren
-De openingsbalans (ook wel beginbalans genoemd) is het begin van een boekhouding.
-We geven hier twee methodes. Een voor een nieuwe boekhouding, en een voor een
-bestaande boekhouding.
+## Entering the Opening balance (or starting balance
+The opening balance (also called starting balance) is the start of an accounting system.
+We will give two methods, one for a new accounting system and one for an existing accounting system.
 
-Als je net begint, of als je al wel een tijdje actief bent, maar nog geen
-boekhouding had, kun je het beste kiezen voor de [Nieuwe openingsbalans]({{ site.baseurl}}/opening_balance/new_balance).
+If you are just starting, or you have been working for a while but did not set up an accounting system yet, 
+[New opening balance]({{ site.baseurl}}/opening_balance/new_balance) is the best place to start.
 
-Anders ga je naar het voorbeeld van de [Bestaande boekhouding]({{ site.baseurl}}/opening_balance/existing_balance)
+Otherwise you check out the example of the [Existing administration]({{ site.baseurl}}/opening_balance/existing_balance)
 
 
 

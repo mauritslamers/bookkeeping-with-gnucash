@@ -1,162 +1,151 @@
 ---
 layout: page
-title: Nieuwe openingsbalans
+title: New opening balance
 permalink: /opening_balance/new_balance
-parent: Openingsbalans
+parent: Opening balance
 nav_order: 1
 ---
 
-## Openingsbalans als je nog geen boekhouding hebt
-We gaan in een paar stappen de openingsbalans opstellen en invoeren in GnuCash.
-Ook ondernemers die al een tijdje actief zijn, maar nog geen boekhouding hebben
-adviseren we deze stappen te volgen.
+## Opening balance if you did not have an existing administration
+In a few steps we are going to create and enter an opening balance in GnuCash.
 
-Toen je je bedrijf startte, heb je waarschijnlijk geld en/of goederen vanuit je
-privé-bezit naar je bedrijf overgeheveld. Denk hierbij aan:
-* Privé-auto op naam van je onderneming gezet.
-* Privé-computer overgebracht naar je onderneming.
-* Geld overgemaakt van je privé-bankrekening naar je zakelijke rekening.
-* Gereedschap dat je privé had, ben je voor je bedrijf gaan gebruiken.
+Also if you already did start with your company but did not yet create an administration, we recommend you to follow this approach.
 
-Het overbrengen van privé naar zakelijk heeft als voordeel dat de prijs
-afgetrokken wordt van de winst. Over de winst betaal je belasting en als je 
-minder winst hebt hoef je minder belasting te betalen.
-Goederen met een waarde van meer dan € 450 moet je afschrijven.
+When you started your company, you probably transferred money and/or goods from your private posessions to your company.
+A few common examples:
+* You put your private car on your company
+* You transferred your computer to your company
+* You transferred money from your private bank account to the company bank account
+* You started using privately owned tools for your company
 
-Goederen die je van privé naar zakelijk overbrengt hebben de waarde die je er
-ook voor zou krijgen bij verkoop. Dit wordt ook wel de "waarde in het economisch
-verkeer" genoemd.
+The advantage of transferring privately owned to company owned brings the advantage that its value 
+gets deducted from the company profits. You pay taxes on profit and if you have less profit, you will pay less taxes.
+In many tax systems you need to depreciate goods. In the Dutch system you are required to depreciate goods with a value above € 450. 
 
-Of je de auto het beste zakelijk of privé kunt aanmerken, hangt sterk af van de waarde
-(aanschaf en op het moment van overbrengen) van de auto, de onderhoudskosten en vaste
-kosten, het verbruik en je verwachte jaarlijkse omzet.
-Als je de auto privé houdt en er zakelijk mee rijdt, moet je voor het meeste belastingvoordeel een rittenregistratie bijhouden om de € 0.19 per zakelijke kilometer
-te kunnen verrekenen.
-De Belastingdienst geeft via de website en de belastingtelefoon veel goede tips en
-informatie over de keuze tussen een zakelijke en privé-auto.
+Goods you transferred from private to company will get the value you would also get when you would sell it. This is called "real economic value".
 
-Maak een lijst van de goederen en hun waarde die je bij de start van de onderneming
-vanuit je privé-bezit over hebt gebracht naar je bedrijf. Bijvoorbeeld:
+Whether you would designate your car as company car or private car depends heavily on the value (original price and the value of the car on the moment of transfer)
+of the car, the maintenance costs, fixed costs, its fuel consumption and the expected yearly revenue.
+If you keep the car private and drive it for the company, you would need to keep an administration in order to get the maximum tax advantage from the travel compensation costs. 
+
+The Dutch Tax Services will give you many good tips and information through their website and phone service on the choice betwen company or private car.
+
+Make a list of goods and their value you transferred from your private ownership to your company when you started.
+For example:
 
 * Laptop: € 400
 * Printer: € 120
-* Bestelbus: € 2600
-* Mobiele telefoon: € 90
-* Gereedschap: € 650
-* Storting zakelijke bankrekening € 1000
+* Van: € 2600
+* Cellphone: € 90
+* Tools: € 650
+* Deposit company bank account: € 1000
 
-De privé-inbreng is totaal € 4860.
+De private contribution is € 4860 in total.
 
-Van de waarde van de privé-inbreng maak je een beginbalans.
-De privé-inbreng van € 4860 is hetzelfde als een privé-storting. Een privé-storting
-staat altijd rechts (credit). Alle goederen en de storing op de zakelijke bankrekening
-zijn nu een zakelijk bezit. Bezittingen staan altijd links (debet).
+From the value of the private contribution you create the starting balance.
+The private contribution € 4860 is the same as a private deposit. 
+A private deposit will always be on the right (credit).
+All goods and the deposit on the company bank account are now a company asset.
+Assets are always on the left (debet).
 
-De laptop, printer, bestelbus, mobiele telefoon en het gereedschap vallen in de categorie
-machines en installaties. De storting op de bankrekening is bank.
+The laptop, printer, van, cellphone and the tools fall into the category machines and installations.
+The deposit on the bank account is bank.
 
-Let op dat in een beginbalans debet (links) en credit (rechts) in totaal hetzelfde
-moeten zijn. In dit voorbeeld dus € 4860. Voer alleen een beginbalans in waarvan debet
-en credit gelijk zijn.
+Make sure that in a starting balance debet (left) and credit (right) should be the same in total.
+In this example € 4860. Only enter a starting balance of which debet and credit are the same.
 
-De openingsbalans ziet er dan zo uit:
+The opening balance looks then like this:
 
-| Rekeningnaam                                     | Rekeningsoort   | Debet | Credit |
-|:-------------------------------------------------|:----------------|------:|-------:|
-| 010 Bedrijfsgebouwen en terreinen                | Activa          |       |        |
-| 020 Machines en installaties                     | Activa          |  3860 |        |
-| 040 Eigen vermogen                               | Eigen vermogen  |       |        |
-| 041 Privéstortingen                              | Eigen vermogen  |       |  4860  |
-| 042 Privéonttrekkingen                           | Eigen vermogen  |       |        |
-| 070 Schulden                                     | Vreemd vermogen |       |        |
-| 100 Kas                                          | Contant         |       |        |
-| 110 Bank                                         | Bank            |  1000 |        |
-| 130 Debiteuren                                   | Debiteuren      |       |        |
-| 140 Crediteuren                                  | Crediteuren     |       |        |
-| 180 Vordering omzetbelasting                     | Activa          |       |        |
-| 185 Schuld omzetbelasting 21%                    | Vreemd vermogen |       |        |
-| 186 Schuld omzetbelasting 9%                     | Vreemd vermogen |       |        |
-| 187 Schuld omzetbelasting overig (geen 0%)       | Vreemd vermogen |       |        |
-| 188 Schuld omzetbelasting 0%                     | Vreemd vermogen |       |        |
-| 189 Schuld omzetbelasting naar mij verlegd       | Vreemd vermogen |       |        |
-| 400 Inkoopprijs materialen en voorraad           | Kosten          |       |        |
-| 410 Kosten van uitbesteed werk                   | Kosten          |       |        |
-| 430 Afschrijvingskosten gebouwen en terreinen    | Kosten          |       |        |
-| 440 Afschrijvingskosten machines en installaties | Kosten          |       |        |
-| 450 Auto- en transportkosten                     | Kosten          |       |        |
-| 460 Huisvestingskosten                           | Kosten          |       |        |
-| 470 Onderhoudskosten                             | Kosten          |       |        |
-| 480 Verkoopkosten + reclame + marketing          | Kosten          |       |        |
-| 490 Andere/overige kosten                        | Kosten          |       |        |
-| 495 Rente + bankkosten                           | Kosten          |       |        |
-| 700 Voorraden                                    | Activa          |       |        |
-| 800 Omzet 21% omzetbelasting                     | Opbrengsten     |       |        |
-| 801 Omzet 9% omzetbelasting                      | Opbrengsten     |       |        |
-| 802 Omzet 0% omzetbelasting                      | Opbrengsten     |       |        |
-|--------------------------------------------------|-----------------| ----- | ------ |
-|                                                  |                 |  4860 |   4860 |
+| Account name                                    | Account type    | Debet | Credit |
+|:------------------------------------------------|:----------------|------:|-------:|
+| 010 Company buildings and terrains              | Assets          |       |        |
+| 020 Machines and installations                  | Assets          |  3860 |        |
+| 040 Private equity                              | Equity          |       |        |
+| 041 Private deposits                            | Equity          |       |  4860  |
+| 042 Private withdrawals                         | Equity          |       |        |
+| 070 Debts                                       | Equity          |       |        |
+| 100 Cash                                        | Cash            |       |        |
+| 110 Bank                                        | Bank            |  1000 |        |
+| 130 Accounts Receivable                         | A/Receivable    |       |        |
+| 140 Accounts Payable                            | A/Payable       |       |        |
+| 180 VAT Receivable                              | Assets          |       |        |
+| 185 VAT Payable 21%                             | Equity          |       |        |
+| 186 VAT Payable 9%                              | Equity          |       |        |
+| 187 VAT Payable other (not 0%)                  | Equity          |       |        |
+| 188 VAT Payable 0%                              | Equity          |       |        |
+| 189 VAT Payable transferred to me               | Equity          |       |        |
+| 400 Expenses of materials and stock             | Expense         |       |        |
+| 410 Expenses of outsourced work                 | Expense         |       |        |
+| 430 Depreciation buildings and terrains         | Expense         |       |        |
+| 440 Depreciation machines and installations     | Expense         |       |        |
+| 450 Expenses Auto and transport                 | Expense         |       |        |
+| 460 Accomodation expenses                       | Expense         |       |        |
+| 470 Maintenance expenses                        | Expense         |       |        |
+| 480 Expenses sales + ads + marketing            | Expense         |       |        |
+| 490 Expenses other                              | Expense         |       |        |
+| 495 Expenses bank and interest                  | Expense         |       |        |
+| 700 Stock                                       | Assets          |       |        |
+| 800 Revenue 21% VAT                             | Income          |       |        |
+| 801 Revenue 9% VAT                              | Income          |       |        |
+| 802 Revenue 0% VAT                              | Income          |       |        |
+|-------------------------------------------------|-----------------| ----- | ------ |
+|                                                 |                 |  4860 |   4860 |
 
-### Openingsbalans privé-inbreng
+### Opening balance private deposit
 
-Open GnuCash en selecteer in het tabblad Rekeningen de grootboekrekening waarvoor je
-het beginsaldo wilt invoeren. In het voorbeeld hierboven is de eerste grootboekrekening
-"Machines en installaties" waarop een beginsaldo van € 3860 komt te staan.
+Open GnuCash and select in the Account overview of the tab "Accounts" the account for which 
+you are doing to enter the opening balance.
+In the example above the first account is "Machines and installations" which will get an opening balance of € 3860.
 
-Kies als begindatum een datum die eerder is dan de eerste factuur die je hebt gehad of
-zelf hebt verstuurd, of de eerste zakelijke kosten die je hebt gemaakt.
-Wij gebruiken als voorbeeld hier 1 januari 2019.
 
-Kies uit het menu "Acties" de optie "Afstemmen...".
+As the date choose a date earlier than the date you wrote your first invoice, or received your first bill, or made the first company costs.
+In this example we will use January 1st 2019.
 
-![Menu Acties, optie Afstemmen]({{ site.baseurl }}/assets/menu_acties_afstemmen.png)
+Choose the option "Reconcile" from the menu Actions.
 
-Je krijgt nu het dialoogvenster "Afstemmingsgegevens" te zien. Vul hier bij de "Afschriftdatum"
-de gekozen begindatum in en bij het "Eindsaldo" het bedrag.
+![Menu Actions, option Reconcile]({{ site.baseurl }}/assets/menu_acties_afstemmen.png)
 
-![Afstemmingsgegevens]({{ site.baseurl }}/assets/acties_afstemmen_dialog.png)
+You will get the dialog "Reconcile". Enter the chosen date in the field "Statement Date", and in the "Ending Balance" field the amount.
 
-Je krijgt nu het venster "Afstemmen" dat nog leeg is. Rechtsonder zie je het eindsaldo
-dat we net ingevoerd hebben. Klik nu op "In balans brengen".
+![Reconciliation]({{ site.baseurl }}/assets/acties_afstemmen_dialog.png)
 
-![Afstemmen]({{ site.baseurl }}/assets/afstemmen_empty.png)
+You now will get the "Reconcile" window, which is empty. In the right bottom corner you will see the Ending balance we just entered. 
+Now click on Balance.
 
-De grootboekrekening "Machines en installaties" wordt nu geopend.
-Vul bij de datum de gekozen datum in, bij omschrijving "Beginbalans" en gebruik
-voor de kolom "Overboeken" de rekening "Privéstortingen".
-De rest kan ongewijzigd blijven. Klik vervolgens op "Vastleggen".
+![Reconcile]({{ site.baseurl }}/assets/afstemmen_empty.png)
 
-![Machines_beginbalans]({{ site.baseurl }}/assets/machines_beginbalans.png)
+The account "Machines and installations" will now be opened.
+Enter the chosen date in the Date field, "Opening Balance" in the description and select the account "Private deposit" in the column Transfer.
+You can leave the rest unchanged. Click on Enter.
 
-Ga nu terug naar het venster "Afstemmen" dat nog open staat. Het kan zijn dat
-het verborgen zit achter het hoofdscherm. Indien dat niet het geval is, selecteer
-de grootboekrekening opnieuw en open het dialoogvenster "Afstemmen" via menu
-"Acties", optie "Afstemmen".
+![Machines_opening_balance]({{ site.baseurl }}/assets/machines_beginbalans.png)
 
-Vink de inkomende geldstroom aan. Je ziet nu dat het verschil rechtsonderin het
-venster € 0 is geworden.
+Now go back to the window "Reconcile" which is still open. It is possible it is hidden behind the main window. If this is not the case, select the
+account again and open the dialog Reconcile through the "Reconcile" option in the "Actions" menu.
+
+Mark the incoming money flow. You will see now that the difference in the right bottom corner has become 0.
+
 
 ![Afstemmen met selectie]({{ site.baseurl }}/assets/afstemmen_marked.png)
 
-Nu dit beginsaldo klopt en er geen verschil meer is, kies je "Afronden" via het
-menu "Afstemmen" of via het "&#9662;"-menu.
+Now the opening balance is right and there is no more difference, you choose "Finish" in the "Reconcile" menu or through the "&#9662;"-menu.
 
-Nu selecteren we de grootboekrekening "Privéstortingen" en kiezen voor "Afstemmen".
-Je ziet dat het beginsaldo ook hier nog op € 0 staat, en dat het Eindsaldo al is
-ingevuld. Om ook een beginsaldo op de rekening "Privéstortingen" te krijgen, kiezen we OK.
+
+Now we select the account "Private deposits" and choose for "Reconcile"
+You will see that the opening balance is also on € 0 here and that the end balance has already been filled in.
+To also get a opening balance on the account "Private deposits" we choose OK.
 
 ![Privéstortingen afstemmen dialoogvenster]({{site.baseurl}}/assets/privestortingen_afstemmen_dialog.png)
 
-Vink in het venster Afstemmen het beginsaldo aan. Het verschil rechtsonder is nu € 0.
+Mark in the Reconcile window the opening balance. The difference in the right bottom corner should be € 0 now.
 
 ![Privéstortingen afstemmen]({{site.baseurl}}/assets/privestortingen_afstemmen_window.png)
 
-Nu dit beginsaldo klopt en er geen verschil meer is, kiezen we "Afronden" via het menu of het pulldown menu met het pijltje.
+Now the opening balance is right and there is no more difference, we choose "Finish" through the menu or the pulldown menu.
 
-Als je nu de grootboekrekening opnieuw selecteert en kiest voor afstemmen, zul je zien dat het beginsaldo klopt
-en er niks meer staat in het scherm "Afstemmen".
+If you now select the account again and choose for "Reconcile", you will see that the opening balance is right and there is nothing more in the window "Reconcile".
 
-Herhaal de bovenstaande stappen voor elke privéstorting om een beginsaldo te genereren.
-Nadat je de privé-inbreng hebt ingevoerd, zijn de drie bedragen uit dit voorbeeld te zien
-in het Rekeningenoverzicht.
+Repeat the steps above for every private deposit to complete the opening balance.
+After you complete entering the private contributions, the three amounts from the example are visible in the Account overview.
 
 ![Rekeningoverzicht na afronding beginbalans]({{site.baseurl}}/assets/accounts_after_start_balance_complete.png)
