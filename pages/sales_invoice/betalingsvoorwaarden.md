@@ -1,40 +1,34 @@
 ---
 layout: page
-title: Betalingsvoorwaarden aanmaken
-permalink: /betalingsvoorwaarden
-parent: Verkoopfacturen
+title: Creating billing terms
+permalink: /billing_terms
+parent: Sales invoice
 nav_order: 2
 ---
 
-## Betalingsvoorwaarden
+## Billing terms
 
-Voordat je een factuur gaat maken, moet je eenmalig betalingsvoorwaarden aanmaken.
-Kies uit het menu "MKB" de optie "Betalingsvoorwaarden bewerken".
+When creating an invioce, you need to create one or more set of billing terms.
 
-In het dialoogvenster "Voorwaarden" klik je op "Nieuw", waarna je het dialoogvenster
-"Nieuwe betalingsvoorwaarde" krijgt.
+Choose the option "Billing terms editor" from the "Business" menu.
+
+In the dialog "Terms" you click "New" after which you are presented the dialog "New Billing Term".
 
 ![Nieuwe betalingsvoorwaarde]({{site.baseurl}}/assets/nieuwe_betalingsvoorwaarde.png)
 
-Hier vul je het volgende in:
+You fill in the following:
 
-* **Naam**: De naam van de betalingsvoorwaarde
-* **Omschrijving**: De omschrijving die op de factuur komt te staan, bijvoorbeeld "Betaling binnen 30 dagen via bank onder vermelding van klantnummer en factuurnummer".
-* **Soort**: dagen
-* **Vervaldagen**: Het aantal dagen waarna de factuur als vervallen wordt weergegeven. Als je kiest voor 30 dagen en de factuur per 1 mei maakt, wordt de factuur
-  op 31 mei weergegeven als vervallen. Als de factuur niet voor 31 mei betaald is, komt de factuur dus als openstaand en te laat betaald in het rapport met
-  openstaande verkoopfacturen te staan. Je kunt hier meer over lezen op [Rapport openstaande verkoopfacturen]({{site.baseurl}}/rapport_openstaande_verkoopfacturen).
-  Het bepalen van de betalingstermijn kan lastig zijn. Hanteer een termijn die gebruikelijk is binnen jouw branch maar zorg er voor dat je zelf niet in
-  betalingsproblemen komt door een te lange termijn af te spreken.
-* **Kortingsdagen**: Dit is optioneel en hoef je dus niet te gebruiken. Je kunt klanten een betalingskorting geven als ze binnen een bepaald aantal dagen betalen.
-  Hou er rekening mee dat deze korting je winstgevendheid aantast.
-* **Kortingspercentage**: Dit is optioneel en hoef je dus niet te gebruiken. Je vult hier het percentage in (bijvoorbeeld 1,5) dat je geeft als je de kortingsdagen hebt ingevuld.
+* **Name**: The name of the billing term
+* **Description**: A description that will be on the invoice, such as "Please pay within 30 days via bank specifying the customer number and invoice number".
+* **Type**: In most cases you will choose "Days" here.
+* **Due Days**: The number of days after which the invoice is declared expired. If you choose for 30 days and create an invoice with as date the 1st of May, the invoice will be indicated as expired on May 31st. If the invoice has not been paid before May 31st, the invoice will be visible as expired and unpaid in the report "Invoices Due Reminder". You can read more about this at [Report Invoices Due Reminder]({{site.baseurl}}/rapport_openstaande_verkoopfacturen). Determining the expiration limit can be complex. Use a period that is custom in your branche, but make sure you won't run into payment difficulties because of too roomy time limits.
+* **Discount Days**: This is optional and you don't have to use it. You can use it, if you want to offer your customer a discount if they pay within a certain number of days. Keep in mind that this might hurt your profitibility.
+* **Discount %**: This field is linked to the "Discount Days" field and is therefore optional as well. It is the discount percentage given to customers paying within the specified number of days.  
 
-Je kunt meerdere verschillende voorwaarden aanmaken als je voor verschillende klanten verschillende voorwaarden hanteert.
+You can create as many terms as you want.
 
-Klik op OK om de betalingsvoorwaarde op te slaan. Klik op Nieuw om nog een betalingsvoorwaarde in te voeren, of Sluiten als je klaar bent.
+Click OK to save the billing term. Click on "New" to create another billing term, or on "Close" if you are done.
 
-Je kunt nu een betalingsvoorwaarde toewijzen aan een klant door deze te bewerken en onder het tabblad Factuurgegevens een betalingsvoorwaarde in te stellen.
-Je kunt ook per factuur een andere betalingsvoorwaarde hanteren.
+You can now assign customers a default billing term by editing the customer and select a billing term on the tab Billing Information. You can also decide per invoice what term to use.
 
-Je bent nu klaar om een [nieuwe verkoopfactuur aan te maken]({{site.baseurl}}/sales_invoice/create_sales_invoice).
+You are now ready to [Create a new invoice]({{site.baseurl}}/sales_invoice/create_sales_invoice).

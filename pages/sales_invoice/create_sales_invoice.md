@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Nieuwe verkoopfactuur maken
+title: Create a new invoice
 permalink: /sales_invoice/create_sales_invoice
-parent: Verkoopfacturen
+parent: Sales invoice
 nav_order: 3
 ---
 
-## Tellers goedzetten
+## Verify Counters
 
-Als je al facturen hebt gemaakt en je wilt doornummeren vanaf een bepaald nummer, pas dan eerst de tellers aan.
-Kies hiervoor de optie "Eigenschappen" uit het menu "Bestand", en ga naar het tabblad "Tellers".
-Hier vul je het laatste factuurnummer in in het veld "Verkoopfactuurnummer".
-Als je laatste factuur het factuurnummer 20190264 heeft, vul dan 20160264 in. De eerstvolgende factuur
-waarvoor je zelf het factuurnummer niet invult krijgt dan automatisch het nummer 20190265.
+If you already created invoices before and you want to continue the number from a specific number, please adjust the counters first.
+Choose the option "Properties" from the "File" menu, go to the tab "Counters".
+In the field "Invoice number" you enter the last number you used. So if the last number was 20190264 use that number.
+The next invoice will automatically get the number 20190265 if you don't specify it yourself.
 
-## Nieuwe verkoopfactuur maken
+## Create a new invoice
+
 
 Klik in de werkbalk op "Nieuwe verkoopfactuur..." of ga naar menu "MKB", optie "Klant" en suboptie "Nieuwe verkooopfactuur...".
 

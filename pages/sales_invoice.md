@@ -1,45 +1,46 @@
 ---
 layout: page
-title: Verkoopfacturen
+title: Sales invoice
 permalink: /sales_invoice/
 nav_order: 5
 has_children: true
 ---
 
-## Verkoopfacturen maken
+## Sales invoice
 
-Een factuur maken: daar draait het om voor ondernemers. Maar wat moet er allemaal op een factuur staan?
-Hoe hou je overzicht over facturen die nog niet betaald zijn?
+Making and sending invoices: that is what it is about for entrepreneurs. But what need to be on an invoice?
+How do you keep track of unpaid invoices?
 
-## Wat staat er op een factuur?
+## What needs to be on an invoice?
 
-Een factuur moet aan een aantal eisen voldoen:
+_NOTE: This is written from the context of the Dutch tax environment. It might be that requirements are different elsewhere._
 
-* Bedrijfsnaam en adres
-* De naam en adres van de klant
-* Debiteurnummer (het nummer van de klant in de boekhouding)
-* BTW-nummer
-* Kamer van Koophandelnummer
-* Factuurnummer: de facturen moeten oplopend zijn genummerd
-* Factuurdatum
-* Duidelijke omschrijving van de geleverde goederen en diensten, eventueel met een leveringsdatum. Splits de factuur uit als dat duidelijker is, bijvoorbeeld een bedrag voor arbeid en een apart bedrag voor materialen. Met een duidelijke factuur verklein je de kans op een te late betaling.
-* Per product of dienst het aantal dat is geleverd
-* Per product of dienst het bedrag exclusief BTW
-* Per product of dienst het BTW-percentage
-* Het kortingspercentage per product of dienst, als het een bruto prijs is
-* Het kortingspercentage of bedrag als de korting voor de hele factuur geldt.
-* BTW-percentage 21%, 9%, 0% of geen BTW bij vrijgestelde beroepen
-* BTW bedrag per percentage
-* Totaalbedrag
-* Betaaltermijn
-* Betaalwijze
+An invoice needs to fulfill a few requirements:
 
-De facturen die je met GnuCash kunt maken voldoen aan deze eisen. Bovendien is er
-de mogelijkheid om de gegenereerde facturen op scherm in te zien en als PDF op te slaan.
+* Company name and address
+- Name and address of the customer
+- Customer number
+- VAT ID
+- Number or ID of the trade register from the Chamber of Commerce
+- Invoice number: invoice numbers need to be numbered incrementally
+- Invoice date
+- Clear description of the delivered goods or services, optionally with a date of delivery. It is a good custom to have separate lines on the invoice for different things, such as separate lines for materials and work. An invoice which is clear reduces the chance of a late payment.
+- Per product or service the quantity
+- Per product or service the amount without VAT
+- Per product or service the VAT rate
+- The discount percentage if it is a gross price
+- The discount percentage if the discount is given on the whole invoice
+- VAT percentage 21%, 9%, 0% or no VAT for trades without VAT
+- VAT amount per rate
+- Total amount
+- Billing terms
+- Payment method
 
-## Een factuur maken
+The invoices created with GnuCash fulfill these requirements. Moreover, there is the option to view the generated invoices and save them as PDF.
 
-Als je nog geen klanten in je systeem hebt zitten, ga naar [Nieuwe klant aanmaken]({{site.baseurl}}/new_customer)
+## Creating an invoice
+
+If you don't have any customers in your system, go to [Create new customer]({{site.baseurl}}/new_customer)
 
 
 

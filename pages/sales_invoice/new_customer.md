@@ -1,62 +1,57 @@
 ---
 layout: page
-title: Nieuwe klant
+title: New customer
 permalink: /new_customer
-parent: Verkoopfacturen
+parent: Sales invoice
 nav_order: 1
 ---
 
-## Klant aanmaken
+## Create a customer
 
-Als je nog geen klanten in je systeem hebt zitten, maken we eerst een klant aan.
-Kies het menu "MKB", de optie "Klant", en vervolgens de optie "Nieuwe klant...".
+If you do not have any customers in your system, the first thing to do is to create one.
+Choose the menu "Business", choose the option "Customer" and then the suboption "New Customer".
 
 ![Menu nieuwe klant]({{site.baseurl}}/assets/menu_new_customer.png)
 
-Voor je de velden gaat invullen, is het belangrijk dat je weet welk klantnummer
-deze klant gaat krijgen.
+Before you start to fill any fields, it is important that you know which customer number this customer is going to get.
+If you already sent invoices before with customer numbers and you want the numbering to continue, choose "File", "Properties" and choose the 
+tab "Counters". Here you fill in the last customer number you gave out. If this number is 4587, the first new customer will get number 4588 automatically.
 
-Als je al facturen hebt verstuurd met klantnummers en
-je wilt doornummeren vanaf een bepaald klantnummer, kies dan menu "Bestand", optie "Eigenschappen"
-en kies het tabblad "Tellers". Hier vul je het laatste klantnummer in in het veld
-"Klantnummer". Als dat nummer 4587 is, zal de eerstvolgende nieuwe klant automatisch klantnummer
-4588 krijgen.
+If you do not have an administration yet, you can choose anumber yourself. If you don't fill in anything, GnuCash will start at 1.
+The next customer will get number 2 etc.
 
-Als je nog geen boekhouding hebt, kun je zelf een nummer kiezen. Wanneer je niets invult,
-begint GnuCash bij 1. De volgende klant krijgt dan nummer 2 enzovoorts.
+Now fill in the following fields
 
-Vul nu de volgende velden in:
+* **Customer number**: If this customer is not a new customer to your company, you fill in the number of that customer. If it is a new customer, leave the field empty. GnuCash will fill it in when you save the customer.
+* **Company name**: The name of the company of the customer
+* **Active**: Indicates whether a customer is active. It is normally left marked.
+* **Name**: Name of the contact person at this customer
+* **Address**: Address of the customer
+* **Phone**: Telephone number, can be left empty
+* **Fax**: Fax number, usually left empty nowadays
+* **E-mail**: E-mail address of the customer
+* **Notes**: Usually left empty.
 
-* **Klantnummer**: Indien dit een bestaande klant is, vul het nummer in. Indien niet, laat het leeg zodat GnuCash zelf het eerstvolgende nummer invult.
-* **Bedrijfsnaam**: De bedrijfsnaam van de klant
-* **Actief**: Dit staat standaard aangevinkt, en het is belangrijk dat ook zo blijft.
-* **Naam**: Naam van de contactpersoon bij deze klant.
-* **Adres**: Adres van het bedrijf: straat, huisnummer, postcode en plaats.
-* **Telefoon**: Mag leeg gelaten worden
-* **Fax**: Mag leeg gelaten worden
-* **E-mail**: Mag leeg gelaten worden
-* **Toelichting**: Mag leeg gelaten worden.
-
-De velden Klantnummer, Bedrijfsnaam, Naam en Adres komen standaard op de factuur te staan.
+The fields "Customer Number", "Company Name", "Name", and "Address" are used for the printed invoice.
 
 ![Nieuwe klant]({{site.baseurl}}/assets/new_customer_dialog.png)
 
-Het tweede tabblad van dit dialoogvenster bestaat uit een aantal gegevens rondom facturen aan deze klant.
-Het is in het begin (nog) niet nodig deze gegevens te wijzigen.
+The second tab of this dialog consists of fields detailing billing options. 
 
 ![Nieuwe klant factuurgegevens]({{site.baseurl}}/assets/new_customer_invoice_properties_dialog.png)
 
-Een kleine uitleg:
-* **Voorwaarden**: hier kun je de standaard betalingsvoorwaarden voor deze klant instellen. Bij [Verkoopvoorwaarden instellen]({{site.baseurl}}/sales_invoice/betalingsvoorwaarden) hebben we al laten zien hoe dat gaat.
-* **Korting**: Hier kun je de standaard korting invoeren voor deze klant. Je kunt ook per artikel korting opgeven bij het invoeren van de factuur.
-* **Kredietlimiet**: Het maximum bedrag dat deze klant aan openstaande facturen mag hebben.
-* **Inclusief belasting**: Zijn de verkopen voor deze klant inclusief of exclusief BTW? Je kunt dit ook per artikel invoeren op de factuur.
-* **Belastingtarief**: Je kunt hier het standaard belastingtarief voor deze klant kiezen. Je kunt ook eenvoudig per artikel het BTW-tarief opgeven.
+* **Terms**: Used to determine default billing terms for this customer. We will look at this more specifically at [Create Billing terms]({{site.baseurl}}/sales_invoice/billing_terms).
+* **Discount**: A way to set a default discount for a customer. You can also put a discount on every item separately when entering the invoice.
+* **Credit Limit**: the maximum amount that this customer can have in unpaid invoices.
+* **Tax included**: Is this customer exempt from VAT? If Yes, put No here.
+* **Tax Table**: Predetermine the VAT rate this customer is going to pay. When entering the invoice, you can also decide this per item.
 
-Het tabblad "Verzendadres" kun je gebruiken om een verzendadres in te voeren. Dit komt niet op de factuur te staan, en is alleen voor je eigen administratie.
+We can leave this empty now, and come back to this later.
 
-Klik op OK om de klant op te slaan.
+The tab "Shipping address" can be used to register a shipping address. This will normally not be on the invoice.
 
-Als je nog geen betalingsvoorwaarden hebt aangemaakt, ga je verder naar [Betalingsvoorwaarden aanmaken]({{site.baseurl}}/betalingsvoorwaarden).
+Click OK to save the customer.
+
+If you did not create any billing terms, continue at the page [Create Billing terms]({{site.baseurl}}/billing_terms).
 
 
