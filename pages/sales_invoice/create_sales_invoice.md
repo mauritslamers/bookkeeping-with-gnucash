@@ -14,93 +14,81 @@ In the field "Invoice number" you enter the last number you used. So if the last
 The next invoice will automatically get the number 20190265 if you don't specify it yourself.
 
 ## Create a new invoice
-
-
-Klik in de werkbalk op "Nieuwe verkoopfactuur..." of ga naar menu "MKB", optie "Klant" en suboptie "Nieuwe verkooopfactuur...".
+Click on the button "New Invoice" or go to menu "Business", option "Customer" and suboption "New Invoice...".
 
 ![Knop Nieuwe verkoopfactuur op de werkbalk]({{site.baseurl}}/assets/toolbar_new_invoice.png)
 
 ![Menu MKB > Klant > Nieuwe verkoopfactuur]({{site.baseurl}}/assets/menu_new_invoice.png)
 
-Je krijgt nu het dialoogvenster "Nieuwe verkoopfactuur".
+You now get the dialog "New Invoice".
 
 ![Dialoogvenster Nieuwe verkoopfactuur]({{site.baseurl}}/assets/new_sales_invoice_dialog.png)
 
-Vul hier het volgende in:
+You will see following fields:
+* **Invoice ID**: You can normally leave that empty, unless you have a specific number in mind.
+* **Date openened**: The date of the invoice, set automatically to the current date.
+* **Customer**: Type a (part of) the name of a customer, or use the select button to select a customer
+* **Job**: You can leave this empty 
+* **Billing ID**: You can leave this empty
+* **Terms**: Select a billing term for this invoice
+* **Notes**: You can put here a note which will be included on the printed invoice
 
-* **Factuurnummer**: Dit kun je leeg laten als je GnuCash automatisch het eerstvolgende factuurnummer wilt laten kiezen.
-* **Documentdatum**: De datum van de factuur. Staat automatisch op de huidige datum.
-* **Klant**: Type (een gedeelte van) de naam van de klant.
-* **Opdracht**: Hoef je niet in te vullen
-* **Kenmerk**: Een veld dat op de factuur komt te staan. Dit kun je leeg laten.
-* **Voorwaarden**: Je kunt voor deze factuur een betalingsvoorwaarde kiezen.
-* **Toelichting**: Hier kun je een opmerking invullen. Deze tekst komt onderaan de factuur te staan.
+Click OK.
 
-Klik op OK.
-
-Je krijgt nu het invoervenster van de items op de factuur te zien.
+You get the input window which allows you to input items on the invoice.
 
 ![Invoervenster nieuwe factuur]({{site.baseurl}}/assets/new_invoice_item_list.png)
 
-Je kunt nu voor elk item op de factuur een regel invoeren.
-Je vind hieronder een aantal verschillende mogelijkheden, die je ook kunt combineren.
+For every item on the invoice you can create a line. 
+We will first describe most of the columns you will probably use the most.
 
-### Item exclusief BTW
-Het item exclusief BTW komt het meest voor. Dit zijn de velden die je invult:
+* **Date**: Automatically this is filled with the date of the invoice. You can adjust this date if the item you are entering related to a different date.
+* **Description**: Put here a clear description of the product or service.
+* **Income Account**: Choose the account that fits the VAT-rate. If the product or service carries a 21% VAT, choose the account "800 Revenue 21% VAT". If the product or service carries 9% VAT, choose the "801 Revenue 9% VAT" account and for a product or service without VAT choose the "Revenue 0% VAT"
+* **Quantity**: The number of units, for example 8 (hours) or 1 (piece).
+* **Unit Price**: The price per unit 
+* **Taxable?**: Indicates that this unit has an associated VAT rate
+* **Tax included?**: If marked, the unit price includes VAT
+* **Tax table**: Which tax table this unit carries.
 
-* **Datum**: Hier staat automatisch de datum van de factuur ingevuld. Je kunt deze datum aanpassen indien het item dat je invult betrekking heeft op een andere dag.
-* **Omschrijving**: Vul hier de omschrijving in van het product of de dienst die je hebt geleverd.
-* **Opbrengstenrekening**: Kies de grootbankrekening die hoort bij het BTW-tarief. Als je een product of dienst levert waar je 21% BTW over berekent, kies dan de grootboekrekening "800 Omzet 21% omzetbelasting". Bij een product of dienst met 9% BTW hoort de grootboekrekening "801 Omzet 9% omzetbelasting" en bij een product met 0% BTW hoort "802 Omzet 0% omzetbelasting".
-* **Hoeveelheid**: Het aantal eenheden, bijvoorbeeld 8 (uur) of 1 (stuk).
-* **Prijs per eenheid**: De verkoopprijs exclusief BTW
-* **Belastbaar**: Zorg dat dit veld staat aangevinkt op het moment dat het een belast product is. Vul je dit niet in, kun je bij het volgende veld geen belastingtarief kiezen!
-* **Belastingtarief**: Het BTW-tarief waaronder dit item valt. Kies "Omzetbelasting verkopen 21%" voor producten waarover 21% BTW gerekend moet worden, "Omzetbelasting verkopen 9%" voor de producten waarover 9% BTW gerekend moet worden en bij verkopen met 0% BTW laat je dit veld leeg.
+The fields Subtotal and Tax will be automatically calculated based on the chosen tax table amd the other numbers in this line.
 
-De velden Subtotaal en BTW worden automatisch berekend op basis van het gekozen BTW-tarief en de andere gegevens in deze regel.
+### Start from the price including VAT
+Usually you would enter the price without VAT, but there are situations where you rather would like to decide on the amount including VAT.
+In order to do this, mark the field "Tax included?". It will calculate the price without VAT and the tax from the unit price.
 
-### Item inclusief BTW
-Het komt soms voor dat je liever een rond bedrag onder aan de streep hebt staan. Vul in dat geval alles in zoals bij het item exclusief BTW, maar vul bij "Prijs per eenheid" het bedrag in inclusief BTW, en selecteer "Inclusief belasting".
-Het subtotaal en BTW worden nu automatisch terugberekend uit het "totaalbedrag".
+### Extra fields such as Discount
+If you want to give some discount on an item, you first choose what kind of discount in the "Discount Type" field, being either a percentage (indicated with %) or a fixed amount (indicated by the currency symbol). You can switch between these options by clicking on the % or the currency symbol. In the field "Discount" you can enter the number, representing the percentage or amount of money.
 
-### Item met korting
-Als je korting wilt geven op een bepaald item kies je eerst wat voor soort korting je wilt geven, namelijk een percentage (aangegeven met "%") of een geldbedrag
-(aangegeven met € of het symbool van de valuta-soort van je factuur). Je kunt tussen deze twee opties schakelen door op de "%" of valuta-symbool te klikken.
-Je vult vervolgens een percentage in of een geldbedrag in het veld "Korting".
+## Editing invoice information
+You cannot change the invoice number, customer or billing terms from the input window. In order to change this, choose "Edit Invoice" from the toolbar.
+You will see now the same dialog you used to create the invoice.
+The field "Notes" you can change in the input window.
 
-
-## Factuurgegevens aanpassen
-Je kunt het factuurnummer, documentdatum, klant of voorwaarden niet wijzigen in het invoervenster.
-Om deze te wijzigen, kies "Verkoopfactuur bewerken" uit de werkbalk.
-Nu krijg je het dialoogvenster te zien dat we hiervoor ook al gezien hebben.
-Het veld Toelichting kun je wel in het invoervenster wijzigen.
-
-## Verkoopfactuur controleren
-
-Door op de knop "Verkoopfactuur afdrukken" in de werkbalk te klikken, krijg je een overzichtsvenster van de factuur te zien.
-Je kunt dit venster ook openen via het menu "Bestand" en de optie "Verkoopfactuur afdrukken".
+## Verify Invoice
+By clicking the button "Print Invoice" in the toolbar, you will get the overview window of the invoice. You can also open this window through the menu "File" and the option "Print Invoice".
 
 ![Ongeboekte verkoopfactuur printvoorbeeld]({{ site.baseurl }}/assets/unbooked_sales_invoice_print.png)
 
-Je ziet dat in dit voorbeeld de bedrijfsgegevens nog niet zijn ingevuld. Mocht je dat nog niet gedaan hebben, vul deze gegevens in.
-Sluit het tabblad "Belastingfactuur" en volg de instructies bij [Bedrijfsgegevens invoeren]({{site.baseurl}}/company_info).
+You will see that in this example the company info has not be entered yet. If you didn't enter this info, please do it now.
+Close the tab tab "Tax Invoice" and follow the instruction at [Enter Company info]({{site.baseurl}}/setup/company_info).
 
-## Verkoopfactuur verwerken
-Als je tevreden bent over de inhoud van de factuur, klik dan op de knop "&#9662;". Dit toont extra opties die niet op de werkbalk passen.
+## Posting Invoice
+If you are happy with the contents of the invoice, click on the button "&#9662;". This button provides a pull down menu shows extra options that won't fit on the toolbar.
 
-![uitklap-menu verkoopfactuur]({{site.baseurl}}/assets/arrow_menu_invoice.png)
+![drop down menu invoice]({{site.baseurl}}/assets/arrow_menu_invoice.png)
 
-Kies daar voor de optie "Verkoopfactuur boeken". Je krijgt nu een dialoogvenster.
+Choose the option "Post invoice". You now get a dialog.
 
-![Bevestiging boeking verkoopfactuur]({{site.baseurl}}/assets/sales_invoice_confirm_dialog.png)
+![Confirmation posting invoice]({{site.baseurl}}/assets/sales_invoice_confirm_dialog.png)
 
-Vul hier het volgende in:
+You will see the following fields: 
 
-* **Boekdatum**: de datum waarop de factuur in de boekhouding komt te staan
-* **Vervaldatum**: deze datum wordt automatisch berekend op basis van de voorwaarden (in dit geval 14 dagen)
-* **Omschrijving**: Dit kun je leeg laten
-* **Naar rekening boeken**: Laat dit op "130 Debiteuren" staan.
+* **Post Date**: The date the invoice will be posted in the administration
+* **Due Date**: This date is calculated automatically based on the billing terms (in this case 14 days)
+* **Description**: You can leave this one empty
+* **Post to Account**: Leave this set to "130 Accounts Receivable".
 
-Klik OK om de factuur te boeken.
+Click OK to post the invoice.
 
-
-
+You now created and posted your first invoice!
